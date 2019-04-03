@@ -29,7 +29,7 @@ uniquearray = []
       uniquearray.push(item)
 
     end
-    uniquearray
+    return uniquearray
   end
 
 end
@@ -41,7 +41,7 @@ def self.genres
         uniquearray.push(item)
 
       end
-      uniquearray
+      return uniquearray
     end
 
 end
