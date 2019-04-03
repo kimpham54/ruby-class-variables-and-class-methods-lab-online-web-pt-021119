@@ -23,7 +23,7 @@ end
 def self.artists
 uniquearray = []
   @@artists.each do |item|
-    if @@artists.include?(item) == false
+    if uniquearray.include?(item) == false
       uniquearray.push(item)
     end
     uniquearray
