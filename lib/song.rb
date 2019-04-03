@@ -62,7 +62,7 @@ def self.genre_count
     # genreshash[item] += 1
   end
 end
-
+return genreshash
 end
 
 
