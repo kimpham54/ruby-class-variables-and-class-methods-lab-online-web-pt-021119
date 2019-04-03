@@ -4,6 +4,8 @@ attr_accessor :name, :artist, :genre
 @@count = 0
 @@artists = []
 @@genres = []
+@@uniquearrayartists == []
+
 
 def initialize(name, artist, genre)
   @name = name
@@ -21,13 +23,12 @@ def self.count
 end
 
 def self.artists
-uniquearray == []
   @@artists.map do |item|
     if @@artists.include?(item) == false
-      uniquearray.push(item)
+      @@uniquearrayartists.push(item)
     end
   end
-  uniquearray
+  @@uniquearrayartists
 end
 
 def self.genres
