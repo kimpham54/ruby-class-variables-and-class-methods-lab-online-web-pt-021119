@@ -21,7 +21,13 @@ def self.count
 end
 
 def self.artists
-  @@artists
+uniquearray == []
+  @@artists.map do |item|
+    if @@artists.include?(item) == false
+      uniquearray.push(item)
+    end
+  end
+  uniquearray
 end
 
 def self.genres
