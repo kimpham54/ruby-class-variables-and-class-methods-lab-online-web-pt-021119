@@ -3,7 +3,7 @@ attr_accessor :name, :artist, :genre
 
 @@count = 0
 @@artists = []
-@@genres = {}
+@@genres = []
 
 def initialize(name, artist, genre)
   @name = name
@@ -12,6 +12,7 @@ def initialize(name, artist, genre)
   @@count += 1
   # if @@artists.include?(artist) == false
   @@artists.push(artist)
+  @@genres.push(genre)
 # end
 end
 
