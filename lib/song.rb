@@ -22,12 +22,13 @@ end
 
 def self.artists
 uniquearray = []
-  @@artists.map do |item|
+  @@artists.each do |item|
     if @@artists.include?(item) == false
       uniquearray.push(item)
     end
+    uniquearray
   end
-  uniquearray
+  
 end
 
 def self.genres
