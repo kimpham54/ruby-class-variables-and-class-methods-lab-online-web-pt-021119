@@ -30,14 +30,20 @@ uniquearray = []
 
     end
     uniquearray
-    binding.pry
-
   end
 
 end
 
 def self.genres
-@@genres
+  uniquearray = []
+    @@genres.each do |item|
+      if uniquearray.include?(item) == false
+        uniquearray.push(item)
+
+      end
+      uniquearray
+    end
+
 end
 
 def self.genre_count
