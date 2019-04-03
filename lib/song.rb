@@ -68,6 +68,18 @@ end
 
 
 def self.artist_count
+  artistshash = {}
+  # counter = 0
+@@artists.each do |item|
+
+  if artistshash.has_key?(item)
+    artistshash[item] += 1
+  else
+    artistshash[item] = 1
+    # genreshash[item] += 1
+  end
+end
+return artistshash
 
 end
 
