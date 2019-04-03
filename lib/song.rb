@@ -60,7 +60,8 @@ def self.genre_count
   else
     genreshash[item] = 1
     # genreshash[item] += 1
-
+  end
+end
 
 end
 
