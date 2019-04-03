@@ -10,9 +10,9 @@ def initialize(name, artist, genre)
   @artist = artist
   @genre = genre
   @@count += 1
-  if @@artists.include?(artist) == false
+  # if @@artists.include?(artist) == false
   @@artists.push(artist)
-end
+# end
 end
 
 def self.count
