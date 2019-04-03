@@ -20,6 +20,8 @@ end
 
 def self.count
   @@count
+  binding.pry
+
 end
 
 def self.artists
@@ -27,7 +29,6 @@ uniquearray = []
   @@artists.each do |item|
     if uniquearray.include?(item) == false
       uniquearray.push(item)
-      binding.pry
     end
     uniquearray
   end
