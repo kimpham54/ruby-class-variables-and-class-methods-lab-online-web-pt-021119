@@ -1,3 +1,5 @@
+require `pry`
+
 class Song
 attr_accessor :name, :artist, :genre
 
@@ -25,6 +27,7 @@ uniquearray = []
   @@artists.each do |item|
     if uniquearray.include?(item) == false
       uniquearray.push(item)
+      binding.pry
     end
     uniquearray
   end
