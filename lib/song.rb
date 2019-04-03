@@ -51,6 +51,16 @@ end
 # Song.genre_count
   # => {"rap" => 5, "rock" => 1, "country" => 3}
 def self.genre_count
+  genreshash = {}
+  # counter = 0
+@@genres.each do |item|
+
+  if genreshash.has_key?(item)
+    genreshash[item] += 1
+  else
+    genreshash[item] = 1
+    # genreshash[item] += 1
+
 
 end
 
