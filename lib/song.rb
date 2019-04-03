@@ -28,7 +28,7 @@ uniquearray = []
     end
     uniquearray
   end
-  
+
 end
 
 def self.genres
