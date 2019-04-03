@@ -29,9 +29,9 @@ uniquearray = []
       uniquearray.push(item)
 
     end
-    return uniquearray
-  end
 
+  end
+return uniquearray
 end
 
 def self.genres
@@ -41,9 +41,9 @@ def self.genres
         uniquearray.push(item)
 
       end
-      return uniquearray
-    end
 
+    end
+  return uniquearray
 end
 
 def self.genre_count
